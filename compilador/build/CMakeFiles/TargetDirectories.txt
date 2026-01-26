@@ -1,0 +1,3 @@
+C:/Users/ulice/OneDrive/Escritorio/SSPTraductore2/Analizador_multiple/compilador/build/CMakeFiles/compilador.dir
+C:/Users/ulice/OneDrive/Escritorio/SSPTraductore2/Analizador_multiple/compilador/build/CMakeFiles/edit_cache.dir
+C:/Users/ulice/OneDrive/Escritorio/SSPTraductore2/Analizador_multiple/compilador/build/CMakeFiles/rebuild_cache.dir
