@@ -5,6 +5,7 @@
 
 #include "lexer/Lexer.h"
 #include "common/TokenType.h"
+#include "parser/LRParser.h"   
 
 static std::string readFile(const std::string& path) {
     std::ifstream file(path);
@@ -25,10 +26,28 @@ static void runLexer(const std::string& input) {
     }
 }
 
+
+static void runLR(const std::string& input, LRParser::Mode mode) {
+    Lexer lx(input);
+    LRParser parser(mode);
+
+    std::string err;
+    bool ok = parser.parse(lx, &err);
+
+    if (ok) {
+        std::cout << "Cadena aceptada \n";
+    } else {
+        std::cout << "Error \n";
+        std::cout << err << "\n";
+    }
+}
+
 int main(int argc, char** argv) {
     if (argc < 4) {
         std::cout << "Uso:\n";
         std::cout << "  compilador --mode lexer <archivo>\n";
+        std::cout << "  compilador --mode lr1   <archivo>\n";
+        std::cout << "  compilador --mode lr2   <archivo>\n";
         return 0;
     }
 
@@ -45,6 +64,16 @@ int main(int argc, char** argv) {
 
     if (mode == "lexer") {
         runLexer(input);
+        return 0;
+    }
+
+    if (mode == "lr1") {
+        runLR(input, LRParser::Mode::Ej1);
+        return 0;
+    }
+
+    if (mode == "lr2") {
+        runLR(input, LRParser::Mode::Ej2);
         return 0;
     }
 
