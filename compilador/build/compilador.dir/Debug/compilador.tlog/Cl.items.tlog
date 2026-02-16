@@ -1,0 +1,5 @@
+C:\Users\ulice\OneDrive\Escritorio\SSPTraductore2\Analizador_multiple\compilador\src\main.cpp;C:\Users\ulice\OneDrive\Escritorio\SSPTraductore2\Analizador_multiple\compilador\build\compilador.dir\Debug\main.obj
+C:\Users\ulice\OneDrive\Escritorio\SSPTraductore2\Analizador_multiple\compilador\src\lexer\Lexer.cpp;C:\Users\ulice\OneDrive\Escritorio\SSPTraductore2\Analizador_multiple\compilador\build\compilador.dir\Debug\Lexer.obj
+C:\Users\ulice\OneDrive\Escritorio\SSPTraductore2\Analizador_multiple\compilador\src\parser\LRParser.cpp;C:\Users\ulice\OneDrive\Escritorio\SSPTraductore2\Analizador_multiple\compilador\build\compilador.dir\Debug\LRParser.obj
+C:\Users\ulice\OneDrive\Escritorio\SSPTraductore2\Analizador_multiple\compilador\src\codegen\JSONGenerator.cpp;C:\Users\ulice\OneDrive\Escritorio\SSPTraductore2\Analizador_multiple\compilador\build\compilador.dir\Debug\JSONGenerator.obj
+C:\Users\ulice\OneDrive\Escritorio\SSPTraductore2\Analizador_multiple\compilador\src\codegen\AjvGenerator.cpp;C:\Users\ulice\OneDrive\Escritorio\SSPTraductore2\Analizador_multiple\compilador\build\compilador.dir\Debug\AjvGenerator.obj

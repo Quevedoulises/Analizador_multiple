@@ -1,0 +1,6 @@
+schema Usuario {
+    nombre: string
+    edad: number
+    email: string
+}
+

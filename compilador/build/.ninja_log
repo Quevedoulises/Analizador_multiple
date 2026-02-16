@@ -1,5 +1,0 @@
-# ninja log v7
-42	2027	7917129958463127	CMakeFiles/compilador.dir/src/parser/LRParser.cpp.obj	553e1ac53c4085b9
-33	2111	7917129958373095	CMakeFiles/compilador.dir/src/lexer/Lexer.cpp.obj	95dc5e417cc00b96
-38	2122	7917129958423109	CMakeFiles/compilador.dir/src/main.cpp.obj	4e6f6d9727e70451
-2123	2387	7917129979270602	compilador.exe	de95f5549fdd4159

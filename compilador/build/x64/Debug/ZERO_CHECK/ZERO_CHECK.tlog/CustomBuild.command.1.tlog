@@ -1,0 +1,10 @@
+^C:\USERS\ULICE\ONEDRIVE\ESCRITORIO\SSPTRADUCTORE2\ANALIZADOR_MULTIPLE\COMPILADOR\BUILD\CMAKEFILES\D68F8C93EE394E396B2C6BD11934B9DF\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/ulice/OneDrive/Escritorio/SSPTraductore2/Analizador_multiple/compilador -BC:/Users/ulice/OneDrive/Escritorio/SSPTraductore2/Analizador_multiple/compilador/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/ulice/OneDrive/Escritorio/SSPTraductore2/Analizador_multiple/compilador/build/compilador.slnx
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

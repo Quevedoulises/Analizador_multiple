@@ -3,6 +3,7 @@
 #include <stdexcept>
 
 static const std::unordered_map<std::string, TokenType> RESERVED = {
+    // ===== lenguaje del profe =====
     {"if", TokenType::IF},
     {"while", TokenType::WHILE},
     {"return", TokenType::RETURN},
@@ -10,7 +11,17 @@ static const std::unordered_map<std::string, TokenType> RESERVED = {
     {"int", TokenType::TYPE},
     {"float", TokenType::TYPE},
     {"void", TokenType::TYPE},
+
+    // ===== DSL SCHEMA (tu proyecto) =====
+    {"schema", TokenType::SCHEMA},
+    {"string", TokenType::T_STRING},
+    {"number", TokenType::T_NUMBER},
+    {"required", TokenType::REQUIRED},
+    {"email", TokenType::EMAIL},
+    {"min", TokenType::MIN},
+    {"max", TokenType::MAX}
 };
+
 
 Lexer::Lexer(const std::string& input)
     : text(input), pos(0), line(1), col(1) {}
@@ -130,6 +141,7 @@ Token Lexer::next() {
 
     if (c == ';') { advance(); return {TokenType::SEMI, ";", startLine, startCol}; }
     if (c == ',') { advance(); return {TokenType::COMMA, ",", startLine, startCol}; }
+    if (c == ':') { advance(); return {TokenType::COLON, ":", startLine, startCol}; }
     if (c == '(') { advance(); return {TokenType::LPAREN, "(", startLine, startCol}; }
     if (c == ')') { advance(); return {TokenType::RPAREN, ")", startLine, startCol}; }
     if (c == '{') { advance(); return {TokenType::LBRACE, "{", startLine, startCol}; }

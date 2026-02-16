@@ -1,82 +1,66 @@
 #include <iostream>
 #include <fstream>
 #include <sstream>
-#include <string>
 
 #include "lexer/Lexer.h"
-#include "common/TokenType.h"
-#include "parser/LRParser.h"   
+#include "parser/LRParser.h"
+#include "ast/ASTNode.h"
+#include "codegen/JSONGenerator.h"
+#include "codegen/AjvGenerator.h"
 
-static std::string readFile(const std::string& path) {
-    std::ifstream file(path);
-    if (!file.is_open()) throw std::runtime_error("No se pudo abrir: " + path);
-    std::stringstream buf;
-    buf << file.rdbuf();
-    return buf.str();
+void printAST(ASTNode* node, int level = 0) {
+    if (!node) return;
+
+    for (int i = 0; i < level; i++)
+        std::cout << "  ";
+
+    std::cout << node->value << "\n";
+
+    for (auto c : node->children)
+        printAST(c, level + 1);
 }
 
-static void runLexer(const std::string& input) {
-    Lexer lx(input);
-    while (true) {
-        Token t = lx.next();
-        std::cout << "[" << tt(t.type) << "] "
-                  << t.lexeme
-                  << " (L" << t.line << ",C" << t.col << ")\n";
-        if (t.type == TokenType::END) break;
-    }
-}
+int main(int argc, char* argv[]) {
 
-
-static void runLR(const std::string& input, LRParser::Mode mode) {
-    Lexer lx(input);
-    LRParser parser(mode);
-
-    std::string err;
-    bool ok = parser.parse(lx, &err);
-
-    if (ok) {
-        std::cout << "Cadena aceptada \n";
-    } else {
-        std::cout << "Error \n";
-        std::cout << err << "\n";
-    }
-}
-
-int main(int argc, char** argv) {
-    if (argc < 4) {
-        std::cout << "Uso:\n";
-        std::cout << "  compilador --mode lexer <archivo>\n";
-        std::cout << "  compilador --mode lr1   <archivo>\n";
-        std::cout << "  compilador --mode lr2   <archivo>\n";
+    // verificar argumento
+    if (argc < 2) {
+        std::cout << "Uso: compilador archivo.schema\n";
         return 0;
     }
 
-    std::string modeFlag = argv[1];
-    std::string mode = argv[2];
-    std::string file = argv[3];
-
-    if (modeFlag != "--mode") {
-        std::cout << "Falta --mode\n";
-        return 1;
-    }
-
-    std::string input = readFile(file);
-
-    if (mode == "lexer") {
-        runLexer(input);
+    // abrir archivo
+    std::ifstream file(argv[1]);
+    if (!file.is_open()) {
+        std::cout << "No se pudo abrir el archivo\n";
         return 0;
     }
 
-    if (mode == "lr1") {
-        runLR(input, LRParser::Mode::Ej1);
+    // leer contenido completo
+    std::stringstream buffer;
+    buffer << file.rdbuf();
+    std::string input = buffer.str();
+
+    // ===== ANALISIS =====
+    Lexer lexer(input);
+    LRParser parser(LRParser::Mode::Schema);
+
+    std::string error;
+    ASTNode* root = parser.parseToAST(lexer, &error);
+
+    if (!root) {
+        std::cout << "ERROR: " << error << "\n";
         return 0;
     }
 
-    if (mode == "lr2") {
-        runLR(input, LRParser::Mode::Ej2);
-        return 0;
-    }
+    // ===== RESULTADOS =====
+    std::cout << "AST:\n";
+    printAST(root);
 
-    std::cout << "Modo no soportado aun: " << mode << "\n";
+    std::cout << "\nJSON:\n";
+    std::cout << JSONGenerator::generate(root) << "\n";
+
+    std::cout << "\nJS AJV:\n";
+    std::cout << AjvGenerator::generate(root) << "\n";
+
     return 0;
 }

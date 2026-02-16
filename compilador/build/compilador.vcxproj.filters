@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\ulice\OneDrive\Escritorio\SSPTraductore2\Analizador_multiple\compilador\src\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\ulice\OneDrive\Escritorio\SSPTraductore2\Analizador_multiple\compilador\src\lexer\Lexer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\ulice\OneDrive\Escritorio\SSPTraductore2\Analizador_multiple\compilador\src\parser\LRParser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\ulice\OneDrive\Escritorio\SSPTraductore2\Analizador_multiple\compilador\src\codegen\JSONGenerator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\ulice\OneDrive\Escritorio\SSPTraductore2\Analizador_multiple\compilador\src\codegen\AjvGenerator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\ulice\OneDrive\Escritorio\SSPTraductore2\Analizador_multiple\compilador\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{396DEF35-C894-3039-A476-4CEE895F6D84}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

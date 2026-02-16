@@ -5,8 +5,13 @@ project(compilador LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-file(GLOB_RECURSE SOURCES
-    src/*.cpp
-)
+add_executable(compilador
+    src/main.cpp
 
-add_executable(compilador ${SOURCES})
+    src/lexer/Lexer.cpp
+
+    src/parser/LRParser.cpp
+
+    src/codegen/JSONGenerator.cpp
+    src/codegen/AjvGenerator.cpp
+)

@@ -29,7 +29,20 @@ enum class TokenType : int {
     RETURN = 21,
     ELSE = 22,
 
-    END = 23         // $
+    END = 23,         // $
+
+        // ===== TOKENS DSL SCHEMA (PROYECTO FINAL) =====
+    SCHEMA = 24,
+    COLON = 25,
+
+    T_STRING = 26,     // string (tipo de dato schema)
+    T_NUMBER = 27,     // number
+
+    REQUIRED = 28,
+    EMAIL = 29,
+    MIN = 30,
+    MAX = 31,
+
 };
 
 inline int tt(TokenType t) { return static_cast<int>(t); }
