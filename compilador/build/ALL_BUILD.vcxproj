@@ -174,9 +174,9 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\ulice\OneDrive\Escritorio\SSPTraductore2\Analizador_multiple\compilador\build\compilador.vcxproj">
-      <Project>{2EF59DAA-AA6F-3CDE-9E76-7D4A8666DF1D}</Project>
-      <Name>compilador</Name>
+    <ProjectReference Include="C:\Users\ulice\OneDrive\Escritorio\SSPTraductore2\Analizador_multiple\compilador\build\AnalizadorMultiple.vcxproj">
+      <Project>{8C42BE94-EDDC-337A-AD47-6A9071DCCC49}</Project>
+      <Name>AnalizadorMultiple</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

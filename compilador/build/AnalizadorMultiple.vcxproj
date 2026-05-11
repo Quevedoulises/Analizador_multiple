@@ -22,11 +22,11 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{2EF59DAA-AA6F-3CDE-9E76-7D4A8666DF1D}</ProjectGuid>
+    <ProjectGuid>{8C42BE94-EDDC-337A-AD47-6A9071DCCC49}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
     <Platform>x64</Platform>
-    <ProjectName>compilador</ProjectName>
+    <ProjectName>AnalizadorMultiple</ProjectName>
     <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -60,26 +60,26 @@
   <PropertyGroup>
     <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\ulice\OneDrive\Escritorio\SSPTraductore2\Analizador_multiple\compilador\build\Debug\</OutDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">compilador.dir\Debug\</IntDir>
-    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">compilador</TargetName>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">AnalizadorMultiple.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">AnalizadorMultiple</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\ulice\OneDrive\Escritorio\SSPTraductore2\Analizador_multiple\compilador\build\Release\</OutDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">compilador.dir\Release\</IntDir>
-    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">compilador</TargetName>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">AnalizadorMultiple.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">AnalizadorMultiple</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\ulice\OneDrive\Escritorio\SSPTraductore2\Analizador_multiple\compilador\build\MinSizeRel\</OutDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">compilador.dir\MinSizeRel\</IntDir>
-    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">compilador</TargetName>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">AnalizadorMultiple.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">AnalizadorMultiple</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\ulice\OneDrive\Escritorio\SSPTraductore2\Analizador_multiple\compilador\build\RelWithDebInfo\</OutDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">compilador.dir\RelWithDebInfo\</IntDir>
-    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">compilador</TargetName>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">AnalizadorMultiple.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">AnalizadorMultiple</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
@@ -127,9 +127,9 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
-      <ImportLibrary>C:/Users/ulice/OneDrive/Escritorio/SSPTraductore2/Analizador_multiple/compilador/build/Debug/compilador.lib</ImportLibrary>
+      <ImportLibrary>C:/Users/ulice/OneDrive/Escritorio/SSPTraductore2/Analizador_multiple/compilador/build/Debug/AnalizadorMultiple.lib</ImportLibrary>
       <LinkErrorReporting></LinkErrorReporting>
-      <ProgramDataBaseFile>C:/Users/ulice/OneDrive/Escritorio/SSPTraductore2/Analizador_multiple/compilador/build/Debug/compilador.pdb</ProgramDataBaseFile>
+      <ProgramDataBaseFile>C:/Users/ulice/OneDrive/Escritorio/SSPTraductore2/Analizador_multiple/compilador/build/Debug/AnalizadorMultiple.pdb</ProgramDataBaseFile>
       <RandomizedBaseAddress></RandomizedBaseAddress>
       <SubSystem>Console</SubSystem>
     </Link>
@@ -181,9 +181,9 @@
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
-      <ImportLibrary>C:/Users/ulice/OneDrive/Escritorio/SSPTraductore2/Analizador_multiple/compilador/build/Release/compilador.lib</ImportLibrary>
+      <ImportLibrary>C:/Users/ulice/OneDrive/Escritorio/SSPTraductore2/Analizador_multiple/compilador/build/Release/AnalizadorMultiple.lib</ImportLibrary>
       <LinkErrorReporting></LinkErrorReporting>
-      <ProgramDataBaseFile>C:/Users/ulice/OneDrive/Escritorio/SSPTraductore2/Analizador_multiple/compilador/build/Release/compilador.pdb</ProgramDataBaseFile>
+      <ProgramDataBaseFile>C:/Users/ulice/OneDrive/Escritorio/SSPTraductore2/Analizador_multiple/compilador/build/Release/AnalizadorMultiple.pdb</ProgramDataBaseFile>
       <RandomizedBaseAddress></RandomizedBaseAddress>
       <SubSystem>Console</SubSystem>
     </Link>
@@ -235,9 +235,9 @@
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
-      <ImportLibrary>C:/Users/ulice/OneDrive/Escritorio/SSPTraductore2/Analizador_multiple/compilador/build/MinSizeRel/compilador.lib</ImportLibrary>
+      <ImportLibrary>C:/Users/ulice/OneDrive/Escritorio/SSPTraductore2/Analizador_multiple/compilador/build/MinSizeRel/AnalizadorMultiple.lib</ImportLibrary>
       <LinkErrorReporting></LinkErrorReporting>
-      <ProgramDataBaseFile>C:/Users/ulice/OneDrive/Escritorio/SSPTraductore2/Analizador_multiple/compilador/build/MinSizeRel/compilador.pdb</ProgramDataBaseFile>
+      <ProgramDataBaseFile>C:/Users/ulice/OneDrive/Escritorio/SSPTraductore2/Analizador_multiple/compilador/build/MinSizeRel/AnalizadorMultiple.pdb</ProgramDataBaseFile>
       <RandomizedBaseAddress></RandomizedBaseAddress>
       <SubSystem>Console</SubSystem>
     </Link>
@@ -288,9 +288,9 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
-      <ImportLibrary>C:/Users/ulice/OneDrive/Escritorio/SSPTraductore2/Analizador_multiple/compilador/build/RelWithDebInfo/compilador.lib</ImportLibrary>
+      <ImportLibrary>C:/Users/ulice/OneDrive/Escritorio/SSPTraductore2/Analizador_multiple/compilador/build/RelWithDebInfo/AnalizadorMultiple.lib</ImportLibrary>
       <LinkErrorReporting></LinkErrorReporting>
-      <ProgramDataBaseFile>C:/Users/ulice/OneDrive/Escritorio/SSPTraductore2/Analizador_multiple/compilador/build/RelWithDebInfo/compilador.pdb</ProgramDataBaseFile>
+      <ProgramDataBaseFile>C:/Users/ulice/OneDrive/Escritorio/SSPTraductore2/Analizador_multiple/compilador/build/RelWithDebInfo/AnalizadorMultiple.pdb</ProgramDataBaseFile>
       <RandomizedBaseAddress></RandomizedBaseAddress>
       <SubSystem>Console</SubSystem>
     </Link>
@@ -356,11 +356,13 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="C:\Users\ulice\OneDrive\Escritorio\SSPTraductore2\Analizador_multiple\compilador\src\main.cpp" />
-    <ClCompile Include="C:\Users\ulice\OneDrive\Escritorio\SSPTraductore2\Analizador_multiple\compilador\src\lexer\Lexer.cpp" />
-    <ClCompile Include="C:\Users\ulice\OneDrive\Escritorio\SSPTraductore2\Analizador_multiple\compilador\src\parser\LRParser.cpp" />
-    <ClCompile Include="C:\Users\ulice\OneDrive\Escritorio\SSPTraductore2\Analizador_multiple\compilador\src\codegen\JSONGenerator.cpp" />
-    <ClCompile Include="C:\Users\ulice\OneDrive\Escritorio\SSPTraductore2\Analizador_multiple\compilador\src\codegen\AjvGenerator.cpp" />
+    <ClCompile Include="C:\Users\ulice\OneDrive\Escritorio\SSPTraductore2\Analizador_multiple\compilador\src\principal.cpp" />
+    <ClCompile Include="C:\Users\ulice\OneDrive\Escritorio\SSPTraductore2\Analizador_multiple\compilador\src\lexico.cpp" />
+    <ClCompile Include="C:\Users\ulice\OneDrive\Escritorio\SSPTraductore2\Analizador_multiple\compilador\src\pila.cpp" />
+    <ClCompile Include="C:\Users\ulice\OneDrive\Escritorio\SSPTraductore2\Analizador_multiple\compilador\src\arbolSintactico.cpp" />
+    <ClCompile Include="C:\Users\ulice\OneDrive\Escritorio\SSPTraductore2\Analizador_multiple\compilador\src\sintactico.cpp" />
+    <ClCompile Include="C:\Users\ulice\OneDrive\Escritorio\SSPTraductore2\Analizador_multiple\compilador\src\generadorJSON.cpp" />
+    <ClCompile Include="C:\Users\ulice\OneDrive\Escritorio\SSPTraductore2\Analizador_multiple\compilador\src\generadorAJV.cpp" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
