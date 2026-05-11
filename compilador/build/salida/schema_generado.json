@@ -1,0 +1,21 @@
+{
+  "type": "object",
+  "title": "Usuario",
+  "properties": {
+    "nombre": {
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 80
+    },
+    "edad": {
+      "type": "number",
+      "minimum": 18,
+      "maximum": 99
+    },
+    "correo": {
+      "type": "string",
+      "format": "email"
+    }
+  },
+  "required": ["nombre", "edad", "correo"]
+}
